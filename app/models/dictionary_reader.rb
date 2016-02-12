@@ -32,7 +32,7 @@ class DictionaryReader
       
       line = line.chomp # remove any newline chars
       
-      #if word contains less than 4 letters [A-z], skip it as per coding challenge rules
+      #if word contains less than 4 letters [A-z], skip it
       next if line.count("A-Za-z") < 4
       
       fingerprint = line.to_sym # you could SHA this if the strings were very long, like DNA sequences
